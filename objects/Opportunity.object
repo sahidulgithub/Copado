@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>AmountField__c</fullName>
+        <externalId>false</externalId>
+        <formula>&quot;$&quot;+TEXT( Amount )</formula>
+        <label>AmountField</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CloseDate__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(MONTH(CloseDate))+ &quot;/&quot; +TEXT(DAY(CloseDate))+ &quot;/&quot; +TEXT(YEAR(CloseDate))</formula>
+        <label>CloseDate</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CreatedDate__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(MONTH(DATEVALUE(CreatedDate)))+ &quot;/&quot; +TEXT(DAY(DATEVALUE(CreatedDate)))+ &quot;/&quot; +TEXT(YEAR(DATEVALUE(CreatedDate)))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>CreatedDate</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FiscalPeriod__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(MONTH(CloseDate),
+1, &quot;1&quot;,
+2, &quot;1&quot;,
+3, &quot;1&quot;,
+4, &quot;2&quot;,
+5, &quot;2&quot;,
+6, &quot;2&quot;,
+7, &quot;3&quot;,
+8, &quot;3&quot;,
+9, &quot;3&quot;,
+10, &quot;4&quot;,
+11, &quot;4&quot;,
+12, &quot;4&quot;,
+null)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>FiscalPeriod</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Fiscal_period__c</fullName>
+        <externalId>false</externalId>
+        <formula>&apos;Q&apos;+FiscalPeriod__c +&apos;-&apos;+ TEXT(YEAR(CloseDate ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Fiscal-period</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SubVehicleCapacity__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(SubVehicle__r.Capacity__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>SubVehicleCapacity</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+</CustomObject>
