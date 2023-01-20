@@ -1,6 +1,353 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
     <fields>
+        <fullName>All_Phone_Numbers__c</fullName>
+        <externalId>false</externalId>
+        <label>All Phone Numbers</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Background__c</fullName>
+        <description>What relevant background does this person have?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>What relevant background does this person have?</inlineHelpText>
+        <label>Background</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Advisor</fullName>
+                    <default>false</default>
+                    <label>Advisor</label>
+                </value>
+                <value>
+                    <fullName>Angel</fullName>
+                    <default>false</default>
+                    <label>Angel</label>
+                </value>
+                <value>
+                    <fullName>Board</fullName>
+                    <default>false</default>
+                    <label>Board</label>
+                </value>
+                <value>
+                    <fullName>Broker</fullName>
+                    <default>false</default>
+                    <label>Broker</label>
+                </value>
+                <value>
+                    <fullName>C-Suite</fullName>
+                    <default>false</default>
+                    <label>C-Suite</label>
+                </value>
+                <value>
+                    <fullName>Founder</fullName>
+                    <default>false</default>
+                    <label>Founder</label>
+                </value>
+                <value>
+                    <fullName>IC</fullName>
+                    <default>false</default>
+                    <label>IC</label>
+                </value>
+                <value>
+                    <fullName>Investor</fullName>
+                    <default>false</default>
+                    <label>Investor</label>
+                </value>
+                <value>
+                    <fullName>LP</fullName>
+                    <default>false</default>
+                    <label>LP</label>
+                </value>
+                <value>
+                    <fullName>Management</fullName>
+                    <default>false</default>
+                    <label>Management</label>
+                </value>
+                <value>
+                    <fullName>Service</fullName>
+                    <default>false</default>
+                    <label>Service</label>
+                </value>
+                <value>
+                    <fullName>PWM</fullName>
+                    <default>false</default>
+                    <label>PWM</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Google_Drive_link__c</fullName>
+        <externalId>false</externalId>
+        <label>Google Drive link</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>HelloSignComplete__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>HelloSignComplete</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Investing_Process_Done__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Investing Process Done</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Investing__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Investing</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Investing_form_Submitted__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Investing form Submitted</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>LP_Advisory_Committee__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Is this person currently in our LP Advisory Committee?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Is this person currently in our LP Advisory Committee?</inlineHelpText>
+        <label>LP Advisory Committee</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Last_Activity_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Activity Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Legal_Process_done__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Legal Process done</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Legal__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Legal</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Onboarding_Stages__c</fullName>
+        <externalId>false</externalId>
+        <label>Onboarding Stages</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Legal Start</fullName>
+                    <default>false</default>
+                    <label>Legal Start</label>
+                </value>
+                <value>
+                    <fullName>Legal Done</fullName>
+                    <default>false</default>
+                    <label>Legal Done</label>
+                </value>
+                <value>
+                    <fullName>Legal Verified</fullName>
+                    <default>false</default>
+                    <label>Legal Verified</label>
+                </value>
+                <value>
+                    <fullName>Investing Done</fullName>
+                    <default>false</default>
+                    <label>Investing Done</label>
+                </value>
+                <value>
+                    <fullName>Portfolio Done</fullName>
+                    <default>false</default>
+                    <label>Portfolio Done</label>
+                </value>
+                <value>
+                    <fullName>Onboarding Complete</fullName>
+                    <default>false</default>
+                    <label>Onboarding Complete</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Onboarding__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Onboarding</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Portfolio__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Portfolio</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Quiet_Roles__c</fullName>
+        <description>Roles (multiple) they currently play at Quiet?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Roles (multiple) they currently play at Quiet?</inlineHelpText>
+        <label>Quiet Roles</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Advisor</fullName>
+                    <default>false</default>
+                    <label>Advisor</label>
+                </value>
+                <value>
+                    <fullName>Build</fullName>
+                    <default>false</default>
+                    <label>Build</label>
+                </value>
+                <value>
+                    <fullName>Candidate</fullName>
+                    <default>false</default>
+                    <label>Candidate</label>
+                </value>
+                <value>
+                    <fullName>Collaborator</fullName>
+                    <default>false</default>
+                    <label>Collaborator</label>
+                </value>
+                <value>
+                    <fullName>Day0</fullName>
+                    <default>false</default>
+                    <label>Day0</label>
+                </value>
+                <value>
+                    <fullName>Ecosystem</fullName>
+                    <default>false</default>
+                    <label>Ecosystem</label>
+                </value>
+                <value>
+                    <fullName>LP</fullName>
+                    <default>false</default>
+                    <label>LP</label>
+                </value>
+                <value>
+                    <fullName>Portfolio</fullName>
+                    <default>false</default>
+                    <label>Portfolio</label>
+                </value>
+                <value>
+                    <fullName>Seller</fullName>
+                    <default>false</default>
+                    <label>Seller</label>
+                </value>
+                <value>
+                    <fullName>Syndication</fullName>
+                    <default>false</default>
+                    <label>Syndication</label>
+                </value>
+                <value>
+                    <fullName>Team</fullName>
+                    <default>false</default>
+                    <label>Team</label>
+                </value>
+                <value>
+                    <fullName>VP</fullName>
+                    <default>false</default>
+                    <label>VP</label>
+                </value>
+                <value>
+                    <fullName>Co-Invest</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Co-Invest</label>
+                </value>
+                <value>
+                    <fullName>Collective</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Collective</label>
+                </value>
+                <value>
+                    <fullName>Expert</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Expert</label>
+                </value>
+                <value>
+                    <fullName>Incubatee</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Incubatee</label>
+                </value>
+                <value>
+                    <fullName>LPAC</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>LPAC</label>
+                </value>
+                <value>
+                    <fullName>Venture Partner</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Venture Partner</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
         <fullName>Sheet_Url__c</fullName>
         <externalId>false</externalId>
         <label>Google Sheet Url</label>
@@ -8,6 +355,39 @@
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>VP_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>VP Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Venture Partner</fullName>
+                    <default>false</default>
+                    <label>Venture Partner</label>
+                </value>
+                <value>
+                    <fullName>Angel Venture Partner</fullName>
+                    <default>false</default>
+                    <label>Angel Venture Partner</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>isPartner__c</fullName>
+        <externalId>false</externalId>
+        <formula>!ISBLANK( TEXT( VP_Type__c ))</formula>
+        <label>Partner User</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
     </fields>
     <fields>
         <fullName>isPassSet__c</fullName>

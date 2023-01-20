@@ -35,6 +35,32 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Days_In_Stage__c</fullName>
+        <externalId>false</externalId>
+        <formula>TODAY() -  Stage_Updated_Date__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Days In Stage</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DriveLink__c</fullName>
+        <description>Link to the Opportunity folder in Google Drive</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Link to the Opportunity folder in Google Drive</inlineHelpText>
+        <label>Drive Link</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
         <fullName>FiscalPeriod__c</fullName>
         <externalId>false</externalId>
         <formula>CASE(MONTH(CloseDate),
@@ -268,5 +294,51 @@ null)</formula>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SubVehicle__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The Sub-Vehicle if VP or similar &quot;smaller pool&quot; within a broader Vehicle.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Sub-Vehicle if VP or similar &quot;smaller pool&quot; within a broader Vehicle.</inlineHelpText>
+        <label>SubVehicle</label>
+        <referenceTo>Vehicle__c</referenceTo>
+        <relationshipLabel>Opportunities (SubVehicle)</relationshipLabel>
+        <relationshipName>Opportunities1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Total_Capacity__c</fullName>
+        <description>Total Round Size</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Total Round Size</inlineHelpText>
+        <label>Total Capacity</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Venture_Partner__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The Angel who brought the deal</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Angel who brought the deal</inlineHelpText>
+        <label>Venture Partner</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Opportunities (Venture Partner)</relationshipLabel>
+        <relationshipName>Opportunities1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
     </fields>
 </CustomObject>
