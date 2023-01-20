@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>AmountField__c</fullName>
+        <externalId>false</externalId>
+        <formula>&quot;$&quot;+TEXT( Amount )</formula>
+        <label>AmountField</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CloseDate__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(MONTH(CloseDate))+ &quot;/&quot; +TEXT(DAY(CloseDate))+ &quot;/&quot; +TEXT(YEAR(CloseDate))</formula>
+        <label>CloseDate</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CreatedDate__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(MONTH(DATEVALUE(CreatedDate)))+ &quot;/&quot; +TEXT(DAY(DATEVALUE(CreatedDate)))+ &quot;/&quot; +TEXT(YEAR(DATEVALUE(CreatedDate)))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>CreatedDate</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FiscalPeriod__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(MONTH(CloseDate),
+1, &quot;1&quot;,
+2, &quot;1&quot;,
+3, &quot;1&quot;,
+4, &quot;2&quot;,
+5, &quot;2&quot;,
+6, &quot;2&quot;,
+7, &quot;3&quot;,
+8, &quot;3&quot;,
+9, &quot;3&quot;,
+10, &quot;4&quot;,
+11, &quot;4&quot;,
+12, &quot;4&quot;,
+null)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>FiscalPeriod</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Fiscal_period__c</fullName>
+        <externalId>false</externalId>
+        <formula>&apos;Q&apos;+FiscalPeriod__c +&apos;-&apos;+ TEXT(YEAR(CloseDate ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Fiscal-period</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Round_Stage__c</fullName>
+        <description>The stage of the company we&apos;re investing into.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The stage of the company we&apos;re investing into.</inlineHelpText>
+        <label>Round Stage</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pre-Seed</fullName>
+                    <default>false</default>
+                    <label>Pre-Seed</label>
+                </value>
+                <value>
+                    <fullName>Seed</fullName>
+                    <default>false</default>
+                    <label>Seed</label>
+                </value>
+                <value>
+                    <fullName>A</fullName>
+                    <default>false</default>
+                    <label>A</label>
+                </value>
+                <value>
+                    <fullName>B</fullName>
+                    <default>false</default>
+                    <label>B</label>
+                </value>
+                <value>
+                    <fullName>C</fullName>
+                    <default>false</default>
+                    <label>C</label>
+                </value>
+                <value>
+                    <fullName>D</fullName>
+                    <default>false</default>
+                    <label>D</label>
+                </value>
+                <value>
+                    <fullName>E</fullName>
+                    <default>false</default>
+                    <label>E</label>
+                </value>
+                <value>
+                    <fullName>F</fullName>
+                    <default>false</default>
+                    <label>F</label>
+                </value>
+                <value>
+                    <fullName>G</fullName>
+                    <default>false</default>
+                    <label>G</label>
+                </value>
+                <value>
+                    <fullName>H</fullName>
+                    <default>false</default>
+                    <label>H</label>
+                </value>
+                <value>
+                    <fullName>I</fullName>
+                    <default>false</default>
+                    <label>I</label>
+                </value>
+                <value>
+                    <fullName>J+</fullName>
+                    <default>false</default>
+                    <label>J+</label>
+                </value>
+                <value>
+                    <fullName>Closed Lost</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Closed Lost</label>
+                </value>
+                <value>
+                    <fullName>Closed Won</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Closed Won</label>
+                </value>
+                <value>
+                    <fullName>Diligencing</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Diligencing</label>
+                </value>
+                <value>
+                    <fullName>Executing</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Executing</label>
+                </value>
+                <value>
+                    <fullName>Pre-B</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Pre-B</label>
+                </value>
+                <value>
+                    <fullName>Private</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Private</label>
+                </value>
+                <value>
+                    <fullName>Public</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Public</label>
+                </value>
+                <value>
+                    <fullName>Reviewing</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Reviewing</label>
+                </value>
+                <value>
+                    <fullName>SMB</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>SMB</label>
+                </value>
+                <value>
+                    <fullName>Seed-1</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Seed-1</label>
+                </value>
+                <value>
+                    <fullName>Sereis C</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Sereis C</label>
+                </value>
+                <value>
+                    <fullName>Series A</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Series A</label>
+                </value>
+                <value>
+                    <fullName>Series B</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Series B</label>
+                </value>
+                <value>
+                    <fullName>Series C</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Series C</label>
+                </value>
+                <value>
+                    <fullName>Series D</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Series D</label>
+                </value>
+                <value>
+                    <fullName>Series E</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Series E</label>
+                </value>
+                <value>
+                    <fullName>Series F</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Series F</label>
+                </value>
+                <value>
+                    <fullName>Triaging</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Triaging</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SubVehicleCapacity__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(SubVehicle__r.Capacity__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>SubVehicleCapacity</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+</CustomObject>
