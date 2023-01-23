@@ -1,285 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
-    <actionOverrides>
-        <actionName>Accept</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Accept</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Accept</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>CancelEdit</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>CancelEdit</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>CancelEdit</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Clone</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Clone</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Clone</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Delete</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Delete</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Delete</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Edit</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Edit</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Edit</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>List</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>List</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>List</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>New</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>New</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>New</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>SaveEdit</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>SaveEdit</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>SaveEdit</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Tab</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Tab</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Tab</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>View</actionName>
-        <comment>Action override created by Lightning App Builder during activation.</comment>
-        <content>Vehicle_Record_Page1</content>
-        <formFactor>Large</formFactor>
-        <skipRecordTypeSelect>false</skipRecordTypeSelect>
-        <type>Flexipage</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>View</actionName>
-        <comment>Action override created by Lightning App Builder during activation.</comment>
-        <content>Vehicle_Record_Page1</content>
-        <formFactor>Small</formFactor>
-        <skipRecordTypeSelect>false</skipRecordTypeSelect>
-        <type>Flexipage</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>View</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <allowInChatterGroups>true</allowInChatterGroups>
-    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
-    <deploymentStatus>Deployed</deploymentStatus>
-    <enableActivities>true</enableActivities>
-    <enableBulkApi>true</enableBulkApi>
-    <enableFeeds>false</enableFeeds>
-    <enableHistory>true</enableHistory>
-    <enableLicensing>false</enableLicensing>
-    <enableReports>true</enableReports>
-    <enableSearch>true</enableSearch>
-    <enableSharing>true</enableSharing>
-    <enableStreamingApi>true</enableStreamingApi>
-    <externalSharingModel>ReadWrite</externalSharingModel>
-    <label>Vehicle</label>
-    <nameField>
-        <label>Vehicle Name</label>
-        <trackHistory>false</trackHistory>
-        <type>Text</type>
-    </nameField>
-    <pluralLabel>Vehicles</pluralLabel>
-    <recordTypeTrackHistory>false</recordTypeTrackHistory>
-    <searchLayouts/>
-    <sharingModel>ReadWrite</sharingModel>
-    <visibility>Public</visibility>
-    <fields>
-        <fullName>Capacity__c</fullName>
-        <description>The total size of the Vehicle.</description>
-        <externalId>false</externalId>
-        <inlineHelpText>The total size of the Vehicle.</inlineHelpText>
-        <label>Capacity</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>2</scale>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Currency</type>
-    </fields>
-    <fields>
-        <fullName>Strategy__c</fullName>
-        <description>Quiet strategies</description>
-        <externalId>false</externalId>
-        <inlineHelpText>Quiet strategies</inlineHelpText>
-        <label>Strategy</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Venture</fullName>
-                    <default>false</default>
-                    <label>Venture</label>
-                </value>
-                <value>
-                    <fullName>Growth</fullName>
-                    <default>false</default>
-                    <label>Growth</label>
-                </value>
-                <value>
-                    <fullName>Co-Invest</fullName>
-                    <default>false</default>
-                    <label>Co-Invest</label>
-                </value>
-                <value>
-                    <fullName>Secondary</fullName>
-                    <default>false</default>
-                    <label>Secondary</label>
-                </value>
-                <value>
-                    <fullName>Credit</fullName>
-                    <default>false</default>
-                    <label>Credit</label>
-                </value>
-                <value>
-                    <fullName>Private Equity</fullName>
-                    <default>false</default>
-                    <label>Private Equity</label>
-                </value>
-                <value>
-                    <fullName>Real Estate</fullName>
-                    <default>false</default>
-                    <label>Real Estate</label>
-                </value>
-                <value>
-                    <fullName>Other</fullName>
-                    <default>false</default>
-                    <label>Other</label>
-                </value>
-                <value>
-                    <fullName>Legacy</fullName>
-                    <default>false</default>
-                    <label>Legacy</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
-        <fullName>Drive_URL__c</fullName>
-        <description>A link to the folder of key legal documents.</description>
-        <externalId>false</externalId>
-        <inlineHelpText>A link to the folder of key legal documents.</inlineHelpText>
-        <label>Drive URL</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Url</type>
-    </fields>
-    <fields>
-        <fullName>Legal_Name__c</fullName>
-        <description>Fully QualifiedLegal Name of Vehicle</description>
-        <externalId>false</externalId>
-        <inlineHelpText>Fully QualifiedLegal Name of Vehicle</inlineHelpText>
-        <label>Legal Name</label>
-        <length>255</length>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Date_Formed__c</fullName>
-        <description>The date the entity was formed</description>
-        <externalId>false</externalId>
-        <inlineHelpText>The date the entity was formed</inlineHelpText>
-        <label>Date Formed</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Date</type>
-    </fields>
     <fields>
         <fullName>Description__c</fullName>
         <description>A one-line description of the Vehicle and what it&apos;s for.</description>
@@ -292,6 +12,87 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Fundraising_Completed__c</fullName>
+        <description>The date the fundraising period ended.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The date the fundraising period ended.</inlineHelpText>
+        <label>Fundraising Completed</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Fundraising_Started__c</fullName>
+        <description>The date the fundraising period started.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The date the fundraising period started.</inlineHelpText>
+        <label>Fundraising Started</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Investing_Completed__c</fullName>
+        <description>The date the investing period ended.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The date the investing period ended.</inlineHelpText>
+        <label>Investing Completed</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Investing_Started__c</fullName>
+        <description>The date the investing period started.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The date the investing period started.</inlineHelpText>
+        <label>Investing Started</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Is_Actively_Investing__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Is the Vehicle still actively investing right now?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Is the Vehicle still actively investing right now?</inlineHelpText>
+        <label>Is Actively Investing?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Is_Actively_Raising__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Is the Vehicle still actively fundraising right now?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Is the Vehicle still actively fundraising right now?</inlineHelpText>
+        <label>Is Actively Raising?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Parent_Vehicle__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The parent Vehicle lookup to nest vehicles (relevant to VP vehicles).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The parent Vehicle lookup to nest vehicles (relevant to VP vehicles).</inlineHelpText>
+        <label>Parent Vehicle</label>
+        <referenceTo>Vehicle__c</referenceTo>
+        <relationshipLabel>Vehicles</relationshipLabel>
+        <relationshipName>Vehicles</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
     </fields>
     <fields>
         <fullName>Vehicle_Type__c</fullName>
@@ -366,60 +167,6 @@
         </valueSet>
     </fields>
     <fields>
-        <fullName>Amount_Called__c</fullName>
-        <description>How much of the Vehicle has been raised from LPs</description>
-        <externalId>false</externalId>
-        <inlineHelpText>How much of the Vehicle has been raised from LPs</inlineHelpText>
-        <label>Amount Called</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>2</scale>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Currency</type>
-    </fields>
-    <fields>
-        <fullName>Amount_Raised__c</fullName>
-        <description>How much of the Vehicle has been raised from LPs.</description>
-        <externalId>false</externalId>
-        <inlineHelpText>How much of the Vehicle has been raised from LPs.</inlineHelpText>
-        <label>Amount Raised</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>2</scale>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Currency</type>
-    </fields>
-    <fields>
-        <fullName>Parent_Vehicle__c</fullName>
-        <deleteConstraint>SetNull</deleteConstraint>
-        <description>The parent Vehicle lookup to nest vehicles (relevant to VP vehicles).</description>
-        <externalId>false</externalId>
-        <inlineHelpText>The parent Vehicle lookup to nest vehicles (relevant to VP vehicles).</inlineHelpText>
-        <label>Parent Vehicle</label>
-        <referenceTo>Vehicle__c</referenceTo>
-        <relationshipLabel>Vehicles</relationshipLabel>
-        <relationshipName>Vehicles</relationshipName>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>Amount_Invested__c</fullName>
-        <description>How much of the Vehicle has been invested into companies.</description>
-        <externalId>false</externalId>
-        <inlineHelpText>How much of the Vehicle has been invested into companies.</inlineHelpText>
-        <label>Amount Invested</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>2</scale>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Currency</type>
-    </fields>
-    <fields>
         <fullName>Venture_Partner__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <description>The Contact for the Venture Partner (if applicable).</description>
@@ -434,169 +181,4 @@
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
-    <fields>
-        <fullName>Investing_Started__c</fullName>
-        <description>The date the investing period started.</description>
-        <externalId>false</externalId>
-        <inlineHelpText>The date the investing period started.</inlineHelpText>
-        <label>Investing Started</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Date</type>
-    </fields>
-    <fields>
-        <fullName>Fundraising_Started__c</fullName>
-        <description>The date the fundraising period started.</description>
-        <externalId>false</externalId>
-        <inlineHelpText>The date the fundraising period started.</inlineHelpText>
-        <label>Fundraising Started</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Date</type>
-    </fields>
-    <fields>
-        <fullName>Investing_Completed__c</fullName>
-        <description>The date the investing period ended.</description>
-        <externalId>false</externalId>
-        <inlineHelpText>The date the investing period ended.</inlineHelpText>
-        <label>Investing Completed</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Date</type>
-    </fields>
-    <fields>
-        <fullName>Is_Actively_Raising__c</fullName>
-        <defaultValue>false</defaultValue>
-        <description>Is the Vehicle still actively fundraising right now?</description>
-        <externalId>false</externalId>
-        <inlineHelpText>Is the Vehicle still actively fundraising right now?</inlineHelpText>
-        <label>Is Actively Raising?</label>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
-        <fullName>Fundraising_Completed__c</fullName>
-        <description>The date the fundraising period ended.</description>
-        <externalId>false</externalId>
-        <inlineHelpText>The date the fundraising period ended.</inlineHelpText>
-        <label>Fundraising Completed</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Date</type>
-    </fields>
-    <fields>
-        <fullName>Is_Actively_Investing__c</fullName>
-        <defaultValue>false</defaultValue>
-        <description>Is the Vehicle still actively investing right now?</description>
-        <externalId>false</externalId>
-        <inlineHelpText>Is the Vehicle still actively investing right now?</inlineHelpText>
-        <label>Is Actively Investing?</label>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
-        <fullName>Last_Update_Sent_Date__c</fullName>
-        <description>The date we sent our last investor update to the LPs.</description>
-        <externalId>false</externalId>
-        <inlineHelpText>The date we sent our last investor update to the LPs.</inlineHelpText>
-        <label>Last Update Sent Date</label>
-        <required>false</required>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Date</type>
-    </fields>
-    <recordTypes>
-        <fullName>Record</fullName>
-        <active>true</active>
-        <description>Record Type for Vehicle</description>
-        <label>Record</label>
-        <picklistValues>
-            <picklist>Strategy__c</picklist>
-            <values>
-                <fullName>Co-Invest</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Credit</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Growth</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Legacy</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Private Equity</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Real Estate</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Secondary</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Venture</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-        <picklistValues>
-            <picklist>Vehicle_Type__c</picklist>
-            <values>
-                <fullName>Angel</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Co-Invest</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Expansion</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Fund</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Holdco</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Personal</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>SPV</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>VP-Angel</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>VP-SPV</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>VP-Seed</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-    </recordTypes>
 </CustomObject>
