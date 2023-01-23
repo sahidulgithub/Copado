@@ -28,37 +28,10 @@
         <type>Checkbox</type>
     </fields>
     <fields>
-        <fullName>Portfolio__c</fullName>
-        <defaultValue>false</defaultValue>
-        <externalId>false</externalId>
-        <label>Portfolio</label>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
-        <fullName>Sheet_Url__c</fullName>
-        <externalId>false</externalId>
-        <label>Google Sheet Url</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <type>Url</type>
-    </fields>
-    <fields>
         <fullName>isPartner__c</fullName>
         <externalId>false</externalId>
         <formula>!ISBLANK( TEXT( VP_Type__c ))</formula>
         <label>Partner User</label>
-        <trackHistory>false</trackHistory>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
-        <fullName>isPassSet__c</fullName>
-        <defaultValue>false</defaultValue>
-        <externalId>false</externalId>
-        <label>isPassSet</label>
-        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Checkbox</type>
     </fields>

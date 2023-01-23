@@ -35,18 +35,6 @@
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>DriveLink__c</fullName>
-        <description>Link to the Opportunity folder in Google Drive</description>
-        <externalId>false</externalId>
-        <inlineHelpText>Link to the Opportunity folder in Google Drive</inlineHelpText>
-        <label>Drive Link</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Url</type>
-    </fields>
-    <fields>
         <fullName>FiscalPeriod__c</fullName>
         <externalId>false</externalId>
         <formula>CASE(MONTH(CloseDate),
@@ -84,231 +72,6 @@ null)</formula>
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>Round_Stage__c</fullName>
-        <description>The stage of the company we&apos;re investing into.</description>
-        <externalId>false</externalId>
-        <inlineHelpText>The stage of the company we&apos;re investing into.</inlineHelpText>
-        <label>Round Stage</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Pre-Seed</fullName>
-                    <default>false</default>
-                    <label>Pre-Seed</label>
-                </value>
-                <value>
-                    <fullName>Seed</fullName>
-                    <default>false</default>
-                    <label>Seed</label>
-                </value>
-                <value>
-                    <fullName>A</fullName>
-                    <default>false</default>
-                    <label>A</label>
-                </value>
-                <value>
-                    <fullName>B</fullName>
-                    <default>false</default>
-                    <label>B</label>
-                </value>
-                <value>
-                    <fullName>C</fullName>
-                    <default>false</default>
-                    <label>C</label>
-                </value>
-                <value>
-                    <fullName>D</fullName>
-                    <default>false</default>
-                    <label>D</label>
-                </value>
-                <value>
-                    <fullName>E</fullName>
-                    <default>false</default>
-                    <label>E</label>
-                </value>
-                <value>
-                    <fullName>F</fullName>
-                    <default>false</default>
-                    <label>F</label>
-                </value>
-                <value>
-                    <fullName>G</fullName>
-                    <default>false</default>
-                    <label>G</label>
-                </value>
-                <value>
-                    <fullName>H</fullName>
-                    <default>false</default>
-                    <label>H</label>
-                </value>
-                <value>
-                    <fullName>I</fullName>
-                    <default>false</default>
-                    <label>I</label>
-                </value>
-                <value>
-                    <fullName>J+</fullName>
-                    <default>false</default>
-                    <label>J+</label>
-                </value>
-                <value>
-                    <fullName>Closed Lost</fullName>
-                    <default>false</default>
-                    <isActive>false</isActive>
-                    <label>Closed Lost</label>
-                </value>
-                <value>
-                    <fullName>Closed Won</fullName>
-                    <default>false</default>
-                    <isActive>false</isActive>
-                    <label>Closed Won</label>
-                </value>
-                <value>
-                    <fullName>Diligencing</fullName>
-                    <default>false</default>
-                    <isActive>false</isActive>
-                    <label>Diligencing</label>
-                </value>
-                <value>
-                    <fullName>Executing</fullName>
-                    <default>false</default>
-                    <isActive>false</isActive>
-                    <label>Executing</label>
-                </value>
-                <value>
-                    <fullName>Pre-B</fullName>
-                    <default>false</default>
-                    <isActive>false</isActive>
-                    <label>Pre-B</label>
-                </value>
-                <value>
-                    <fullName>Private</fullName>
-                    <default>false</default>
-                    <isActive>false</isActive>
-                    <label>Private</label>
-                </value>
-                <value>
-                    <fullName>Public</fullName>
-                    <default>false</default>
-                    <isActive>false</isActive>
-                    <label>Public</label>
-                </value>
-                <value>
-                    <fullName>Reviewing</fullName>
-                    <default>false</default>
-                    <isActive>false</isActive>
-                    <label>Reviewing</label>
-                </value>
-                <value>
-                    <fullName>SMB</fullName>
-                    <default>false</default>
-                    <isActive>false</isActive>
-                    <label>SMB</label>
-                </value>
-                <value>
-                    <fullName>Seed-1</fullName>
-                    <default>false</default>
-                    <isActive>false</isActive>
-                    <label>Seed-1</label>
-                </value>
-                <value>
-                    <fullName>Sereis C</fullName>
-                    <default>false</default>
-                    <isActive>false</isActive>
-                    <label>Sereis C</label>
-                </value>
-                <value>
-                    <fullName>Series A</fullName>
-                    <default>false</default>
-                    <isActive>false</isActive>
-                    <label>Series A</label>
-                </value>
-                <value>
-                    <fullName>Series B</fullName>
-                    <default>false</default>
-                    <isActive>false</isActive>
-                    <label>Series B</label>
-                </value>
-                <value>
-                    <fullName>Series C</fullName>
-                    <default>false</default>
-                    <isActive>false</isActive>
-                    <label>Series C</label>
-                </value>
-                <value>
-                    <fullName>Series D</fullName>
-                    <default>false</default>
-                    <isActive>false</isActive>
-                    <label>Series D</label>
-                </value>
-                <value>
-                    <fullName>Series E</fullName>
-                    <default>false</default>
-                    <isActive>false</isActive>
-                    <label>Series E</label>
-                </value>
-                <value>
-                    <fullName>Series F</fullName>
-                    <default>false</default>
-                    <isActive>false</isActive>
-                    <label>Series F</label>
-                </value>
-                <value>
-                    <fullName>Triaging</fullName>
-                    <default>false</default>
-                    <isActive>false</isActive>
-                    <label>Triaging</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
-        <fullName>Round_Sub_Stage__c</fullName>
-        <description>Round Sub-Stage of the investment</description>
-        <externalId>false</externalId>
-        <inlineHelpText>Round Sub-Stage of the investment</inlineHelpText>
-        <label>Round Sub Stage</label>
-        <required>false</required>
-        <trackFeedHistory>false</trackFeedHistory>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>1</fullName>
-                    <default>false</default>
-                    <label>1</label>
-                </value>
-                <value>
-                    <fullName>2</fullName>
-                    <default>false</default>
-                    <label>2</label>
-                </value>
-                <value>
-                    <fullName>3</fullName>
-                    <default>false</default>
-                    <label>3</label>
-                </value>
-                <value>
-                    <fullName>&quot;&quot;</fullName>
-                    <default>false</default>
-                    <isActive>false</isActive>
-                    <label>&quot;&quot;</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
-    </fields>
-    <fields>
         <fullName>SubVehicleCapacity__c</fullName>
         <externalId>false</externalId>
         <formula>TEXT(SubVehicle__r.Capacity__c)</formula>
@@ -319,5 +82,37 @@ null)</formula>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SubVehicle__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The Sub-Vehicle if VP or similar &quot;smaller pool&quot; within a broader Vehicle.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Sub-Vehicle if VP or similar &quot;smaller pool&quot; within a broader Vehicle.</inlineHelpText>
+        <label>SubVehicle</label>
+        <referenceTo>Vehicle__c</referenceTo>
+        <relationshipLabel>Opportunities (SubVehicle)</relationshipLabel>
+        <relationshipName>Opportunities1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Venture_Partner__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The Angel who brought the deal</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Angel who brought the deal</inlineHelpText>
+        <label>Venture Partner</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Opportunities (Venture Partner)</relationshipLabel>
+        <relationshipName>Opportunities1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
     </fields>
 </CustomObject>
