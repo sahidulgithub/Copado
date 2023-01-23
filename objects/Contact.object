@@ -10,13 +10,49 @@
         <type>Url</type>
     </fields>
     <fields>
-        <fullName>HelloSignComplete__c</fullName>
-        <defaultValue>false</defaultValue>
+        <fullName>Onboarding_Stages__c</fullName>
         <externalId>false</externalId>
-        <label>HelloSignComplete</label>
+        <label>Onboarding Stages</label>
+        <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
-        <type>Checkbox</type>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Legal Start</fullName>
+                    <default>false</default>
+                    <label>Legal Start</label>
+                </value>
+                <value>
+                    <fullName>Legal Done</fullName>
+                    <default>false</default>
+                    <label>Legal Done</label>
+                </value>
+                <value>
+                    <fullName>Legal Verified</fullName>
+                    <default>false</default>
+                    <label>Legal Verified</label>
+                </value>
+                <value>
+                    <fullName>Investing Done</fullName>
+                    <default>false</default>
+                    <label>Investing Done</label>
+                </value>
+                <value>
+                    <fullName>Portfolio Done</fullName>
+                    <default>false</default>
+                    <label>Portfolio Done</label>
+                </value>
+                <value>
+                    <fullName>Onboarding Complete</fullName>
+                    <default>false</default>
+                    <label>Onboarding Complete</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
     </fields>
     <fields>
         <fullName>Onboarding__c</fullName>
@@ -28,10 +64,28 @@
         <type>Checkbox</type>
     </fields>
     <fields>
+        <fullName>Sheet_Url__c</fullName>
+        <externalId>false</externalId>
+        <label>Google Sheet Url</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Url</type>
+    </fields>
+    <fields>
         <fullName>isPartner__c</fullName>
         <externalId>false</externalId>
         <formula>!ISBLANK( TEXT( VP_Type__c ))</formula>
         <label>Partner User</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>isPassSet__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>isPassSet</label>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Checkbox</type>
     </fields>
